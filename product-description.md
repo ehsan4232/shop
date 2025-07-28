@@ -16,7 +16,7 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 #### Visual Identity
 - Unique logo design featuring red, blue, and white colors
 - Modern, fancy homepage design
-- Long-form landing page with feature presentations
+- Lengthy homepage with feature presentations
 - Complementary images and short videos
 - Dual call-to-action buttons (top and middle/bottom)
 - Pop-up request forms
@@ -36,7 +36,7 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 **Object-Oriented Design Principle**: The product structure must follow object-oriented concepts where child classes inherit attributes from their parent classes. This ensures consistency, reduces redundancy, and maintains a clean hierarchical structure throughout the product catalog.
 
 ##### Product Class Structure
-- **Root Class**: Product (with price attribute and media lists)
+- **Root Class**: Product (with price attribute and media (image/video) list)
 - **Tree Structure**: Unlimited depth levels with inheritance
 - **Attribute Inheritance**: Child classes automatically inherit all attributes from parent classes
 - **Instance Creation**: Only from leaf nodes
@@ -45,15 +45,16 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - **Predefined Types**: Color, Description
 - **Color Fields**: Visual color squares
 - **Description Fields**: Text boxes
-- **Custom Attributes**: User-defined attributes per level
+- **Custom Attributes**: User-defined attributes per level. value types can be anything and they dont have to be specified. 
 - **Inheritance**: All attributes are inherited by child classes
 - **Empty Values**: Allowed for non-price attributes
 
 ##### Product Instances
 - Created from leaf products only
-- Multiple instances with varying attributes
+- Multiple instances with varying attributes or even the same attributes. 
 - Bulk creation with "create another" checkbox
-- Stock management and warnings
+- Stock management for store owner
+- warning for store customer when the count is less than 3. 
 - Shared and unique attribute display
 - Inherit all attributes from the product class hierarchy
 
@@ -73,7 +74,7 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - Recommended products
 - Complete product and category menus
 - Search functionality (names and categories)
-- Multi-level filtering system
+- Multi-level filtering system by attributes and subclasses and parent classes.
 - Sorting options (recent, most viewed, most purchased, price)
 
 ##### Customization
@@ -105,7 +106,7 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - Performance metrics
 
 ### Technical Requirements
-- Support for 1000+ concurrent users
+- Support for 1000 stores each with 1000 customers and 1000 products instances. maximum 1000 online users in all (not each of) the stores. 
 - Persian language optimization
 - Mobile-responsive design
 - High performance and scalability
@@ -174,11 +175,9 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 
 **Non-Functional Requirements:**
 - [ ] Support for 10,000+ registered users
-- [ ] OTP delivery within 30 seconds
+- [ ] OTP delivery within 60 seconds
 - [ ] Session management for 1000+ concurrent users
 - [ ] User data GDPR compliance
-- [ ] Account lockout after 5 failed attempts
-- [ ] Password complexity requirements
 
 #### 2.2 Store Management System
 **Functional Requirements:**
@@ -304,7 +303,6 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - [ ] Customer account system
 - [ ] Search and filtering
 - [ ] Product reviews and ratings
-- [ ] Wishlist functionality
 - [ ] Social media integration
 
 **Non-Functional Requirements:**
@@ -321,12 +319,8 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 **Functional Requirements:**
 - [ ] Multiple payment gateway support
 - [ ] Secure payment processing
-- [ ] Refund and cancellation handling
 - [ ] Payment method management
 - [ ] Transaction history and reporting
-- [ ] Fraud detection
-- [ ] Multi-currency support (future)
-- [ ] Subscription billing (future)
 
 **Non-Functional Requirements:**
 - [ ] Payment success rate >95%
@@ -342,8 +336,6 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - [ ] Shipping cost calculation
 - [ ] Tracking number generation
 - [ ] Delivery status updates
-- [ ] Return and exchange handling
-- [ ] Shipping label generation
 - [ ] Delivery area management
 - [ ] Shipping method optimization
 
@@ -364,7 +356,6 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - [ ] Traffic analysis
 - [ ] Conversion funnel tracking
 - [ ] Custom report generation
-- [ ] Data export capabilities
 
 **Non-Functional Requirements:**
 - [ ] Real-time data processing <5 seconds
@@ -377,13 +368,11 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 #### 4.4 Communication System
 **Functional Requirements:**
 - [ ] SMS integration (multiple providers)
-- [ ] Email notification system
 - [ ] In-app notifications
 - [ ] Live chat system
-- [ ] Customer support ticketing
 - [ ] Automated marketing campaigns
 - [ ] Newsletter management
-- [ ] Push notifications (future)
+- [ ] Push notifications
 
 **Non-Functional Requirements:**
 - [ ] SMS delivery within 30 seconds
@@ -439,12 +428,8 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 
 #### 6.2 Launch Preparation
 - [ ] User documentation and guides
-- [ ] Admin training materials
-- [ ] Customer support knowledge base
 - [ ] Marketing website completion
-- [ ] Beta testing with select users
 - [ ] Performance baseline establishment
-- [ ] Support team training
 - [ ] Launch day runbook preparation
 
 ### Phase 7: Post-Launch Support & Optimization (Ongoing)
@@ -460,14 +445,8 @@ Mall (فروشگاه‌ساز مال) is a comprehensive e-commerce platform des
 - [ ] Capacity planning and scaling
 
 #### 7.2 Feature Enhancement
-- [ ] User-requested features
 - [ ] Performance improvements
-- [ ] New payment gateway integrations
-- [ ] Additional language support
-- [ ] Mobile app development
-- [ ] Advanced analytics features
 - [ ] AI-powered recommendations
-- [ ] International expansion features
 
 ## Success Metrics
 
